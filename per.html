@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root">
+<h1></h1>
+<h2></h2>
+
+  </div>
+  
+  <script>
+let root= document.getElementById('root');
+function percentCaculatorReturnstring(realValue,totalvalue)
+// percentCaculatorReturnstring 처럼, 리턴값을 해도 된다.
+{
+  let result =(realValue/totalvalue) *100;
+ return result + "%";
+//  반환물은 string이다. %가 문자이기 때문이다.
+} 
+
+// 총 100점에서 20점은 몇 퍼센트?
+console.log(percentCaculator(20,100));
+root.children[0].innerHTML=percentCaculator(20,100);
+root.children[1].innerHTML=percentCaculator(44,36790);
+
+  </script>
+</body>
+</html>
